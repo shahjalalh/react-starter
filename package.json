@@ -1,0 +1,30 @@
+{
+  "name": "react-starter",
+  "version": "1.0.0",
+  "description": "Starter for Express, React, Redux, SCSS, Bootstrap applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahjalalh/react-starter.git"
+  },
+  "keywords": [
+    "ExpressJS",
+    "ReactJS",
+    "Redux",
+    "SCSS",
+    "Bootstrap",
+    "Airbnb Eslint",
+    "pm2",
+    "mocha",
+    "chai"
+  ],
+  "author": "Shahjalal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shahjalalh/react-starter/issues"
+  },
+  "homepage": "https://github.com/shahjalalh/react-starter#readme"
+}
