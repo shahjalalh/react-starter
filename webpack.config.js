@@ -22,6 +22,16 @@ module.exports = {
                 }
             }
         ]
-    }
-
+    },
+    devServer: {
+        port: 8000,
+        contentBase: '{{app_name}}/templates',
+        proxy: {
+          '**': {
+            target: 'http://localhost:3000',
+          },
+        },
+        historyApiFallback: true,
+      },
+    devtool: 'source-map',
 };
