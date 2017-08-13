@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/shahjalalh/react-starter/issues"
   },
-  "homepage": "https://github.com/shahjalalh/react-starter#readme"
+  "homepage": "https://github.com/shahjalalh/react-starter#readme",
+  "devDependencies": {
+    "webpack": "^3.5.4"
+  }
 }
