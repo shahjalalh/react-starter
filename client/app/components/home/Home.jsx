@@ -4,7 +4,7 @@ export default class HelloWorld extends React.Component{
     render(){
         return (
             <div>
-                Hello react starter
+                <h1>Hello react starter</h1>
             </div>
         );
     }
