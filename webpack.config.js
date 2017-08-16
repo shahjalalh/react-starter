@@ -3,7 +3,7 @@ const webpack = require('webpack');
 module.exports = {
     entry: {
         app: __dirname + './client/app/components/App.jsx',
-        vendor: ['react', 'react-dom', 'react-router', 'router-bootstrap', 'react-router-bootstrap', 'isomorphic-fetch', 'babel-polyfill', 'react-select']
+        vendor: ['jquery', 'react', 'react-dom', 'react-router', 'router-bootstrap', 'react-router-bootstrap', 'isomorphic-fetch', 'babel-polyfill', 'react-select']
     },
     output: {
         path: __dirname + '{{app_name}}/static/js',
@@ -16,22 +16,27 @@ module.exports = {
         loaders: [
             {
                 test: /\.jsx$/,
+                exclude: /(node_modules)/,
                 loader: 'babel-loader',
                 query: {
                     presets: ['react', 'es2015']
                 }
+            },
+            {
+                test: /\.css$/,
+                loader: 'style-loader!css-loader!autoprefixer-loader'
+            },
+            {
+                test: /\.scss$/,
+                loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
             }
         ]
     },
     devServer: {
-        port: 8000,
+        inline: true,
+        port: 8080,
         contentBase: '{{app_name}}/templates',
-        proxy: {
-          '**': {
-            target: 'http://localhost:3000',
-          },
-        },
         historyApiFallback: true,
-      },
+    },
     devtool: 'source-map',
 };
