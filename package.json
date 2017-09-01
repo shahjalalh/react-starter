@@ -56,12 +56,15 @@
     "mocha": "^3.5.0",
     "node-sass": "^4.5.3",
     "nodemon": "^1.11.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "react-addons-test-utils": "^15.6.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
     "webpack": "^3.5.4",
-    "webpack-dev-server": "^2.7.1"
+    "webpack-dev-server": "^2.7.1",
+    "whatwg-fetch": "^2.0.3"
   },
   "dependencies": {
     "axios": "^0.16.2",
@@ -73,9 +76,7 @@
     "lodash": "^4.17.4",
     "mongoose": "^4.11.6",
     "object-assign": "^4.1.1",
-    "react": "^15.6.1",
     "react-bootstrap": "^0.31.2",
-    "react-dom": "^15.6.1",
     "react-icons": "^2.2.5",
     "react-redux": "^5.0.6",
     "react-router": "^4.1.2",
@@ -83,7 +84,6 @@
     "react-router-dom": "^4.1.2",
     "react-select": "^1.0.0-rc.5",
     "redux": "^3.7.2",
-    "source-map-support": "^0.4.15",
-    "whatwg-fetch": "^2.0.3"
+    "source-map-support": "^0.4.16"
   }
 }
